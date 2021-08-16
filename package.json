@@ -1,0 +1,23 @@
+{
+  "name": "cabinet-dentaire-atur",
+  "version": "1.0.0",
+  "private": true,
+  "description": "cabinet-dentaire-atur",
+  "author": "marcillyl",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^3.11.1",
+    "gatsby-cli": "^3.11.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
