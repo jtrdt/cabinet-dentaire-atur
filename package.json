@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "description": "cabinet-dentaire-atur",
-  "author": "marcillyl",
+  "author": "Bill & Pecoss <contact@bill-pecoss.com> (https://bill-pecoss.com)",
+  "contributors": ["Marcilly Luc <marcillyl@icloud.com> (https://github.com/marcillyl)", "Jerome Tridat <jtridat@pm.me> (https://github.com/kratere)"],
   "keywords": [
     "gatsby"
   ],
