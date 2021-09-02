@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import './Nav.css';
 
-export default function Nav() {
+const Nav = () => {
   return (
     <nav>
       <div>
@@ -12,4 +12,6 @@ export default function Nav() {
       </div>
     </nav>
   );
-}
+};
+
+export default Nav;
