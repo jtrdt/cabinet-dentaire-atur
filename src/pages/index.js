@@ -10,8 +10,8 @@ const IndexPage = () => {
         <section>
           <title>Home Page</title>
           <h1>
-            Cabinet l'Effet Dentaire <br />
-            Votre équipe de chirurgien dentiste à Périgueux Boulazac.
+            Bienvenue sur le site web du Cabinet l'Effet Dentaire <br />
+            Votre équipe de chirurgien dentiste à Périgueux Boulazac
           </h1>
           <div>
             <strong>Dr COSTA Charlotte</strong>
@@ -20,11 +20,8 @@ const IndexPage = () => {
           </div>
         </section>
         <section>
-          <h2>
-            Bienvenue sur le site web du Cabinet l'Effet Dentaire, votre centre de soins dentaires à Périgueux Boulazac.
-          </h2>
           <article>
-            <h3>L'équipe</h3>
+            <h3>L'équipe au complet</h3>
             <p>Notre équipe de professionnels saura répondre à tous vos besoins.</p>
             <div>
               <p>Dr COSTA Charlotte</p>
