@@ -45,7 +45,7 @@ const IndexPage = () => {
                 <li>
                   <strong>Dr DAOULAS Noémie</strong>
                   <p>Université Bordeaux 2</p>
-                  <p>Inscription à l’ordre n°24/xxx</p>
+                  <p>Inscription à l’ordre n°24/832</p>
                 </li>
                 <li>
                   <strong>Dr TRIDAT Floriane</strong>
