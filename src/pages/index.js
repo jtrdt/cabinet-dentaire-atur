@@ -8,10 +8,10 @@ const IndexPage = () => {
       <Nav />
       <main>
         <section>
-          <title>Cabinet l'Effet Dentaire — Dentiste Périgueux Boulazac Isle Manoire Atur</title>
+          <title>Cabinet l'Effet Dentaire — Dentiste Boulazac Isle Manoire Atur Grand Périgueux</title>
           <h1>
             Cabinet l'Effet Dentaire <br />
-            Votre chirurgien dentiste à Boulazac Isle Manoire
+            <span>Votre chirurgien dentiste à Boulazac Isle Manoire</span>
           </h1>
           <div>
             <ul>
@@ -29,7 +29,8 @@ const IndexPage = () => {
         </section>
         <section>
           <h2>
-            Bienvenue sur le site du Cabinet l'Effet Dentaire votre centre de soins dentaires à Boulazac Isle Manoire
+            Bienvenue sur le site du <span>Cabinet l'Effet Dentaire</span> notre équipe vous accueille à{' '}
+            <span>Boulazac - Grand Périgueux</span>
           </h2>
         </section>
         <section>
