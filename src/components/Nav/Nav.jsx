@@ -6,10 +6,18 @@ const Nav = () => {
   return (
     <nav>
       <div>
-        <Link to='/'>Accueil</Link>
-        <Link to='/infos'>Informations</Link>
-        <Link to='/#nous-trouver'>Nous trouver</Link>
-        <Link to='/#nous-contacter'>Contact</Link>
+        <Link class='nav__link' to='/'>
+          Accueil
+        </Link>
+        <Link class='nav__link' to='/infos'>
+          Informations
+        </Link>
+        <Link class='nav__link' to='/#nous-trouver'>
+          Nous trouver
+        </Link>
+        <Link class='nav__link' to='/#nous-contacter'>
+          Contact
+        </Link>
       </div>
     </nav>
   );
