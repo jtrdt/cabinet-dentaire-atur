@@ -2,6 +2,7 @@ import * as React from 'react';
 import Nav from '../components/Nav/Nav';
 import Footer from '../components/Footer/Footer';
 import '../styles/index.css';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
   return (
@@ -39,6 +40,14 @@ const IndexPage = () => {
         </section>
         <section class='about'>
           <div class='about-container'>
+            <StaticImage
+              src='../images/ETEC - CABINET DENTAIRE - ATUR - PORTRAITS-001.jpg'
+              alt="L'équipe de dentistes du cabinet l'Effet Dentaire à Atur Boulazac Périgueux"
+              placeholder='blurred'
+              layout='fixed'
+              width={400}
+              height={266}
+            />
             <article class='about-article'>
               <h3 class='about-article__headline'>Notre équipe</h3>
               <div class='line'></div>
@@ -66,6 +75,14 @@ const IndexPage = () => {
             </article>
           </div>
           <div class='about-container'>
+            <StaticImage
+              src='../images/ETEC - CABINET DENTAIRE - ATUR - BATIMENT-023.jpg'
+              alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Périgueux"
+              placeholder='blurred'
+              layout='fixed'
+              width={400}
+              height={266}
+            />
             <article class='about-article'>
               <h3 class='about-article__headline'>Le cabinet</h3>
               <div class='line'></div>
