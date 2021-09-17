@@ -9,6 +9,9 @@ const Nav = () => {
         <Link class='nav__link' to='/'>
           Accueil
         </Link>
+        <Link class='nav__link' to='/cabinet'>
+          Le cabinet
+        </Link>
         <Link class='nav__link' to='/infos'>
           Informations
         </Link>
