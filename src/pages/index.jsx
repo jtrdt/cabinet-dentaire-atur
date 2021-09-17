@@ -6,49 +6,41 @@ import '../styles/index.css';
 
 const IndexPage = () => {
   return (
-    <div>
+    <div class='page'>
       <Nav />
       <main>
-        <section class='home'>
-          <div class='home-gradient'>
+        <section class='home container'>
+          <div class='home-container'>
             <title>Cabinet l'Effet Dentaire — Dentiste Atur Boulazac Isle Manoire Grand Périgueux</title>
-            <h1 class='title'>
+            <h1 class='home-container__headline'>
               Cabinet l'Effet Dentaire <br />
-              <span class='title title--small'>Votre chirurgien dentiste à Atur - Boulazac Isle Manoire</span>
+              <span class='home-container__headline home-container__headline--small'>Votre chirurgien dentiste à Atur - Boulazac Isle Manoire</span>
             </h1>
-            <ul class='crew'>
-              <li class='crew__name'>
+            <ul class='home-container__text'>
+              <li class='home-container__text--name'>
                 <strong>Dr COSTA Charlotte</strong>
               </li>
-              <li class='crew__name'>
+              <li class='home-container__text--name'>
                 <strong>Dr DAOULAS Noémie</strong>
               </li>
-              <li class='crew__name'>
+              <li class='home-container__text--name'>
                 <strong>Dr TRIDAT Floriane</strong>
               </li>
             </ul>
           </div>
         </section>
-        <section class='welcome'>
-          <div class='welcome-shade'>
-            <h2 class='welcome__headline'>
-              Bienvenue sur le site du <span class='welcome__headline--bold'>Cabinet l'Effet Dentaire</span> notre
+        <section class='welcome container'>
+          <div class='welcome-container'>
+            <h2 class='welcome-container__headline'>
+              Bienvenue sur le site du <span class='welcome-container__headline--bold'>Cabinet l'Effet Dentaire</span> notre
               équipe vous accueille à <br />
-              <span class='welcome__headline--bold'>Atur - Boulazac Isle Manoire</span>
+              <span class='welcome-container__headline--bold'>Atur - Boulazac Isle Manoire</span>
             </h2>
           </div>
         </section>
-        <section class='about'>
+        <section id='cabinet' class='about container'>
           <div class='about-container'>
-            <StaticImage
-              src='../images/ETEC - CABINET DENTAIRE - ATUR - PORTRAITS-001.jpg'
-              alt="L'équipe de dentistes du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
-              placeholder='blurred'
-              layout='fixed'
-              width={400}
-              height={266}
-            />
-            <article class='about-article'>
+            <article class='about-article about-article--crew'>
               <h3 class='about-article__headline'>Notre équipe</h3>
               <div class='line'></div>
               <div>
@@ -73,17 +65,23 @@ const IndexPage = () => {
                 <p class='about-article__text'>Sécrétaire : Antoinette</p>
               </div>
             </article>
+            <StaticImage
+              src='../images/ETEC - CABINET DENTAIRE - ATUR - PORTRAITS-001.jpg'
+              alt="L'équipe de dentistes du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
+              placeholder='blurred'
+              layout='fixed'
+              class='image image--crew'
+            />
           </div>
           <div class='about-container'>
-            <StaticImage
+          <StaticImage
               src='../images/ETEC - CABINET DENTAIRE - ATUR - BATIMENT-023.jpg'
               alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
               placeholder='blurred'
               layout='fixed'
-              width={400}
-              height={266}
+              class='image image--lab'
             />
-            <article class='about-article'>
+            <article class='about-article about-article--lab'>
               <h3 class='about-article__headline'>Le cabinet</h3>
               <div class='line'></div>
               <p class='about-article__text'>
@@ -94,7 +92,7 @@ const IndexPage = () => {
             </article>
           </div>
         </section>
-        <section id='nous-trouver' class='find'>
+        <section id='nous-trouver' class='find container'>
           <h3 class='find__headline'>Nous trouver</h3>
           <div class='line line--big'></div>
           <iframe
@@ -102,7 +100,7 @@ const IndexPage = () => {
             title='map'
           ></iframe>
         </section>
-        <section id='nous-contacter' class='contact'>
+        <section id='nous-contacter' class='contact container'>
           <h3 class='contact__headline'>Nous contacter</h3>
           <div class='line line--big'></div>
           <div class='contact-container'>
@@ -119,6 +117,9 @@ const IndexPage = () => {
               <button class='contact-card__button'>
                 <a href='mailto:contact@cabinet-dentaire-atur.fr?subject=Demande%20de%20renseignements'>Par email</a>
               </button>
+              <p>
+                Écrivez-vous, notre secrétaire vous répondra dans les meilleurs délais ! 
+              </p>
             </div>
           </div>
         </section>

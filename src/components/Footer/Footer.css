@@ -1,7 +1,6 @@
-footer {
-  width: 100vw;
+.footer {
   background: #222;
-  padding: 48px 12px;
+  padding: 44px 12px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -21,20 +20,47 @@ footer {
   align-items: flex-start;
   width: 400px;
 }
+.footer-links a {
+  color: #777;
+}
+.footer-links__title {
+  font-weight: 500;
+  font-size: 15px;
+}
 .footer-legal {
-  text-transform: uppercase;
-  letter-spacing: 1pt;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #666;
+  color: #777;
 }
 .footer-legal__brand {
-  font-weight: 700;
-  color: #666;
+  color: #aaa;
 }
 .footer__location {
-  margin: 36px 0 12px 0;
+  color: #aaa;
+  margin: 34px 0 1px 0;
+}
+@media screen and (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: unset;
+  }
+  .footer-links__title {
+    margin: 12px 0;
+  }
+  .footer-legal {
+    margin-top: 24px;
+  }
+  .footer__location {
+    color: #aaa;
+    text-align: center;
+  }
 }

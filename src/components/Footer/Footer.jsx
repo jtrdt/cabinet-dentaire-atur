@@ -4,11 +4,11 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer class='footer'>
       <div class='footer-container'>
         <div class='footer-links'>
           <div>
-            <h5>Plan du site</h5>
+            <h5 class='footer-links__title'>Plan du site</h5>
             <ul>
               <li>
                 <Link to='/'>Accueil</Link>
@@ -16,9 +16,9 @@ const Footer = () => {
               <li>
                 <Link to='/cabinet'>Le cabinet</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to='/infos'>Informations</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to='/#nous-trouver'>Nous trouver</Link>
               </li>
@@ -28,7 +28,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h5>Liens utiles</h5>
+            <h5 class='footer-links__title'>Liens utiles</h5>
             <ul>
               <li>
                 <a href='https://www.ameli.fr/' rel='noreferrer' target='_blank'>
