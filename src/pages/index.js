@@ -1,8 +1,8 @@
-import * as React from 'react';
-import Nav from '../components/Nav/Nav';
-import Footer from '../components/Footer/Footer';
-import '../styles/index.css';
 import { StaticImage } from 'gatsby-plugin-image';
+import * as React from 'react';
+import Footer from '../components/Footer/Footer';
+import Nav from '../components/Nav/Nav';
+import '../styles/index.css';
 
 const IndexPage = () => {
   return (
@@ -11,10 +11,10 @@ const IndexPage = () => {
       <main>
         <section class='home'>
           <div class='home-gradient'>
-            <title>Cabinet l'Effet Dentaire — Dentiste Boulazac Isle Manoire Atur Grand Périgueux</title>
+            <title>Cabinet l'Effet Dentaire — Dentiste Atur Boulazac Isle Manoire Grand Périgueux</title>
             <h1 class='title'>
               Cabinet l'Effet Dentaire <br />
-              <span class='title title--small'>Votre chirurgien dentiste à Boulazac Isle Manoire</span>
+              <span class='title title--small'>Votre chirurgien dentiste à Atur - Boulazac Isle Manoire</span>
             </h1>
             <ul class='crew'>
               <li class='crew__name'>
@@ -34,7 +34,7 @@ const IndexPage = () => {
             <h2 class='welcome__headline'>
               Bienvenue sur le site du <span class='welcome__headline--bold'>Cabinet l'Effet Dentaire</span> notre
               équipe vous accueille à <br />
-              <span class='welcome__headline--bold'>Boulazac - Grand Périgueux</span>
+              <span class='welcome__headline--bold'>Atur - Boulazac Isle Manoire</span>
             </h2>
           </div>
         </section>
@@ -42,7 +42,7 @@ const IndexPage = () => {
           <div class='about-container'>
             <StaticImage
               src='../images/ETEC - CABINET DENTAIRE - ATUR - PORTRAITS-001.jpg'
-              alt="L'équipe de dentistes du cabinet l'Effet Dentaire à Atur Boulazac Périgueux"
+              alt="L'équipe de dentistes du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
               placeholder='blurred'
               layout='fixed'
               width={400}
@@ -77,7 +77,7 @@ const IndexPage = () => {
           <div class='about-container'>
             <StaticImage
               src='../images/ETEC - CABINET DENTAIRE - ATUR - BATIMENT-023.jpg'
-              alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Périgueux"
+              alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
               placeholder='blurred'
               layout='fixed'
               width={400}
@@ -117,9 +117,7 @@ const IndexPage = () => {
             </div>
             <div class='contact-card'>
               <button class='contact-card__button'>
-                <a href='mailto:effet.dentaire@gmail.com?subject=Demande%20de%20renseignements&body=Bonjour%2C'>
-                  Par email
-                </a>
+                <a href='mailto:contact@cabinet-dentaire-atur.fr?subject=Demande%20de%20renseignements'>Par email</a>
               </button>
             </div>
           </div>
