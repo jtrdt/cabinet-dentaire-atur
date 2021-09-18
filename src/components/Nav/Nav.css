@@ -8,6 +8,7 @@ nav {
   height: 70px;
   padding: 0 24px;
   background: #ffffff;
+  box-shadow: 0 4px 20px #000000AA;
 }
 .nav__link {
   font-size: 1.1em;
