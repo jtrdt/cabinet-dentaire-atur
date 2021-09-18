@@ -1,25 +1,25 @@
-import * as React from 'react';
 import { Link } from 'gatsby';
+import * as React from 'react';
 import './Nav.css';
 
 const Nav = () => {
   return (
     <nav>
-      <Link class='nav__link' to='#' activeStyle={{ textDecoration: 'underline' }}>
+      <Link className='nav__link' to='#' activeStyle={{ textDecoration: 'underline' }}>
         Accueil
       </Link>
-      <Link class='nav__link' to='/#cabinet' activeStyle={{ textDecoration: 'underline' }}>
+      <a className='nav__link' href='/#cabinet' activeStyle={{ textDecoration: 'underline' }}>
         Le cabinet
-      </Link>
-      {/* <Link class='nav__link' to='/infos'>
+      </a>
+      {/* <Link className='nav__link' to='/infos'>
           Informations
         </Link> */}
-      <Link class='nav__link' to='/#nous-trouver' activeStyle={{ textDecoration: 'underline' }}>
+      <a className='nav__link' href='/#nous-trouver' activeStyle={{ textDecoration: 'underline' }}>
         Nous trouver
-      </Link>
-      <Link class='nav__link' to='/#nous-contacter' activeStyle={{ textDecoration: 'underline' }}>
+      </a>
+      <a className='nav__link' href='/#nous-contacter' activeStyle={{ textDecoration: 'underline' }}>
         Contact
-      </Link>
+      </a>
     </nav>
   );
 };

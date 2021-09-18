@@ -1,34 +1,34 @@
-import * as React from 'react';
 import { Link } from 'gatsby';
+import * as React from 'react';
 import './Footer.css';
 
 const Footer = () => {
   return (
     <footer>
-      <div class='footer-container'>
-        <div class='footer-links'>
+      <div className='footer-container'>
+        <div className='footer-links'>
           <div>
-            <h5 class='footer-links__title'>Plan du site</h5>
+            <h5 className='footer-links__title'>Plan du site</h5>
             <ul>
               <li>
                 <Link to='/'>Accueil</Link>
               </li>
               <li>
-                <Link to='/cabinet'>Le cabinet</Link>
+                <a href='/#cabinet'>Le cabinet</a>
               </li>
               {/* <li>
                 <Link to='/infos'>Informations</Link>
               </li> */}
               <li>
-                <Link to='/#nous-trouver'>Nous trouver</Link>
+                <a href='/#nous-trouver'>Nous trouver</a>
               </li>
               <li>
-                <Link to='/#nous-contacter'>Contact</Link>
+                <a href='/#nous-contacter'>Contact</a>
               </li>
             </ul>
           </div>
           <div>
-            <h5 class='footer-links__title'>Liens utiles</h5>
+            <h5 className='footer-links__title'>Liens utiles</h5>
             <ul>
               <li>
                 <a href='https://www.ameli.fr/' rel='noreferrer' target='_blank'>
@@ -48,17 +48,17 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div class='footer-legal'>
+        <div className='footer-legal'>
           <p>
             Copyright &copy; 2021{' '}
-            <a href='mailto:contact@billetpecoss.com' class='footer-legal__brand'>
+            <a href='mailto:contact@billetpecoss.com' className='footer-legal__brand'>
               Bill &amp; Pecoss
             </a>
           </p>
           <p>Tous droits réservés</p>
         </div>
       </div>
-      <div class='footer__location'>
+      <div className='footer__location'>
         <p>5 Impasse Édouard Glissant 24750 Boulazac Isle Manoire</p>
       </div>
     </footer>
