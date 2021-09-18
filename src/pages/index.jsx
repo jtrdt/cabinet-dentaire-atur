@@ -68,7 +68,7 @@ const IndexPage = () => {
               </div>
             </article>
             <StaticImage
-              src='../images/ETEC - CABINET DENTAIRE - ATUR - PORTRAITS-001.jpg'
+              src='../images/ETEC - CABINET DENTAIRE - ATUR - PORTRAITS-004.jpg'
               alt="L'équipe de dentistes du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
               placeholder='blurred'
               class='image image--crew'
@@ -76,7 +76,7 @@ const IndexPage = () => {
           </div>
           <div class='about-container flex'>
             <StaticImage
-              src='../images/ETEC - CABINET DENTAIRE - ATUR - BATIMENT-023.jpg'
+              src='../images/ETEC - CABINET DENTAIRE - ATUR - BATIMENT-003.jpg'
               alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
               placeholder='blurred'
               class='image image--lab'
