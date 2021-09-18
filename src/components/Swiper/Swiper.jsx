@@ -5,9 +5,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './Swiper.css';
+
 SwiperCore.use([Pagination, Autoplay]);
 
-export default function Carousel() {
+const Carousel = () => {
   return (
     <>
       <Swiper
@@ -24,7 +25,7 @@ export default function Carousel() {
         <SwiperSlide>
           <StaticImage
             src='../../images/ETEC - CABINET DENTAIRE - 002.jpg'
-            alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
+            alt="Salle d'attente du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
             placeholder='blurred'
           />
         </SwiperSlide>
@@ -38,18 +39,20 @@ export default function Carousel() {
         <SwiperSlide>
           <StaticImage
             src='../../images/ETEC - CABINET DENTAIRE - 004.jpg'
-            alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
+            alt="Salle de radio du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
             placeholder='blurred'
           />
         </SwiperSlide>
         <SwiperSlide>
           <StaticImage
             src='../../images/ETEC - CABINET DENTAIRE - 005.jpg'
-            alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
+            alt="Salle de soin du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
             placeholder='blurred'
           />
         </SwiperSlide>
       </Swiper>
     </>
   );
-}
+};
+
+export default Carousel;
