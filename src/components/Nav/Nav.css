@@ -7,7 +7,7 @@ nav {
   width: 100vw;
   height: 70px;
   padding: 0 24px;
-  background: #00000055;
+  background: #ffffff;
 }
 .nav__link {
   font-size: 1.1em;
@@ -18,10 +18,10 @@ nav {
   border-bottom: solid 3px transparent;
 }
 .nav__link:hover {
-  border-bottom-color: white;
+  border-bottom-color: black;
 }
 nav a {
-  color: white;
+  color: black;
 }
 @media screen and (max-width: 600px) {
   nav {

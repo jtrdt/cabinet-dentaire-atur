@@ -68,6 +68,9 @@ ul {
   min-height: 100vh;
   background: url('../images/ETEC\ -\ CABINET\ DENTAIRE\ -\ ATUR\ -\ BATIMENT-002.jpg') no-repeat center;
   background-size: cover;
+  z-index: -1;
+  top: 0;
+  position: sticky;
 }
 .home-container {
   flex-direction: column;
@@ -128,6 +131,7 @@ ul {
   height: 70vh;
   background: url('../images/ETEC\ -\ CABINET\ DENTAIRE\ -\ ATUR\ -\ BATIMENT-001.jpg') no-repeat center;
   background-size: cover;
+  box-shadow: 0px -4px 20px #000000aa;
 }
 .welcome-container {
   height: 70vh;
@@ -276,7 +280,7 @@ iframe {
   flex-direction: column;
   padding: 47px 12px;
   background: #f4f4f4;
-  background: linear-gradient(to top, #90ee9088, #005E93dd);
+  background: linear-gradient(to top, #90ee90, #005E93);
 }
 .contact__headline {
   font-size: 2.4em;
