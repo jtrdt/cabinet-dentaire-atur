@@ -44,6 +44,7 @@ footer li:hover a, .footer-legal__brand:hover {
   color: #aaa;
 }
 .footer__location {
+  font-size: 1.1em;
   color: #777;
   margin-top: 34px;
 }

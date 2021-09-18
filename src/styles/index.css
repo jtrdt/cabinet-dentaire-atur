@@ -58,6 +58,7 @@ ul {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-weight: 800;
   text-align: center;
+  text-transform: uppercase;
 }
 .flex {
   display: flex;
@@ -66,7 +67,7 @@ ul {
 }
 .home {
   min-height: 100vh;
-  background: url('../images/ETEC\ -\ CABINET\ DENTAIRE\ -\ ATUR\ -\ BATIMENT-002.jpg') no-repeat center;
+  background: url('../images/ETEC\ -\ CABINET\ DENTAIRE\ - 007.jpg') no-repeat center;
   background-size: cover;
   z-index: -1;
   top: 0;
@@ -76,20 +77,20 @@ ul {
   flex-direction: column;
   min-height: 100vh;
   padding: 0px 12px;
-  background: linear-gradient(to bottom, #90ee9077, #005E93);
+  background: linear-gradient(to bottom, #90ee90bb, #106Ea3dd);
   color: white;
 }
 .home-container__headline {
-  font-size: 5.7em;
-  font-weight: 800;
+  font-size: 5em;
+  font-weight: 700;
 }
 .home-container__headline--alt {
-  display: inline-block;
-  max-width: 400px;
   text-transform: none;
-  font-size: 0.3em;
+  display: inline-block;
+  max-width: 370px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 1.4em;
+  line-height: 1.7em;
 }
 .home-container__text {
   display: flex;
@@ -97,14 +98,14 @@ ul {
   align-items: center;
 }
 .home-container__text--name {
-  padding: 12px 24px;
+  padding: 10px 20px;
   margin: 54px 24px 0px 24px;
   text-align: center;
   font-size: 1.2em;
-  font-weight: 600;
-  background: #ffffff77;
-  border: solid 1.5pt #ffffff77;
-  box-shadow: 4px 4px 20px #00000044;
+  font-weight: 500;
+  background: #ffffff55;
+  border: solid 1.5pt #ffffff88;
+  box-shadow: inset 0px 0px 20px #ffffffaa;
 }
   @media screen and (max-width: 700px) {
     .home-container {
@@ -115,6 +116,7 @@ ul {
     }
     .home-container__headline--alt {
       font-size: 0.3em;
+      line-height: 1.4em;
     }
     .home-container__text {
       flex-direction: column;
@@ -122,14 +124,14 @@ ul {
       justify-content: flex-start;
     }
     .home-container__text--name {
-      margin: 12px;
+      margin: 13px;
       font-size: 1em;
     }
   }
 
 .welcome {
   height: 70vh;
-  background: url('../images/ETEC\ -\ CABINET\ DENTAIRE\ -\ ATUR\ -\ BATIMENT-001.jpg') no-repeat center;
+  background: url('../images/ETEC\ -\ CABINET\ DENTAIRE\ - 001.jpg') no-repeat center;
   background-size: cover;
   box-shadow: 0px -4px 20px #000000aa;
 }
@@ -146,7 +148,7 @@ ul {
   backdrop-filter: blur(7px);
   border: solid 10px white;
   box-shadow: 4px 4px 20px #000000aa;
-  font-size: 1.77em;
+  font-size: 1.8em;
   font-weight: 400;
   line-height: 1.3em;
 }
@@ -156,7 +158,7 @@ ul {
   @media screen and (max-width: 700px) {
     .welcome-container__headline {
       padding: 12px;
-      font-size: 1.47em;
+      font-size: 1.5em;
     }
   }
 
@@ -171,15 +173,6 @@ ul {
 .about-container {
   margin: 47px 0px;
 }
-.image {
-  position: relative;
-  z-index: 0;
-  object-fit: cover;
-  width: 370px;
-  height: 300px;
-  box-shadow: 4px 4px 20px #00000077;
-  border: solid 1.5pt white;
-}
 .about-article {
   position: relative;
   z-index: 4;
@@ -192,7 +185,7 @@ ul {
   text-align: center;
 }
 .about-article__headline {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .line {
   width: 70px;
@@ -201,11 +194,20 @@ ul {
   background: #90ee90aa;
 }
 .about-article__text {
-  font-size: 1.14em;
-  line-height: 1.7em;
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 .about-article__text li {
   margin: 12px 0;
+}
+.image {
+  position: relative;
+  z-index: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+  box-shadow: 4px 4px 20px #00000077;
+  border: solid 1.5pt white;
 }
   @media screen and (max-width: 900px) {
     .about-container {
@@ -214,34 +216,25 @@ ul {
     .about :nth-child(2) {
       flex-direction: column-reverse;
     }
-    .image--crew {
-      margin-top: -20px;
+    .about-article--top {
+      margin-bottom: -40px;
     }
-    .image--lab {
-      margin-top: -20px;
-    }
-    .about-article--crew {
-      margin-bottom: -20px;
-    }
-    .about-article--lab {
-      margin-bottom: -20px;
+    .about-article--bottom {
+      margin-bottom: -40px;
     }
   }
   @media screen and (min-width: 900px) {
-    .image--crew {
-      margin-left: -30px;
+    .about-article--top {
+      margin-right: -60px;
     }
-    .image--lab {
-      margin-right: -30px;
-    }
-    .about-article--crew {
-      margin-right: -30px;
-    }
-    .about-article--lab {
-      margin-left: -30px;
+    .about-article--bottom {
+      margin-left: -60px;
     }
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 700px) {
+    .about-article__headline {
+      font-size: 1.7em;
+    }
     .image {
       width: 700px;
       height: 450px;    
@@ -254,7 +247,7 @@ ul {
   background: white;
 }
 .location__headline {
-  font-size: 2.7em;
+  font-size: 2.3em;
 }
 .line--alt {
   width: 100px;
@@ -279,11 +272,10 @@ iframe {
   z-index: 10;
   flex-direction: column;
   padding: 47px 12px;
-  background: #f4f4f4;
-  background: #8181c7;
+  background: #308Ec3;
 }
 .contact__headline {
-  font-size: 2.4em;
+  font-size: 2.2em;
   color: white;
 }
 .contact-container {
@@ -298,18 +290,17 @@ iframe {
   width: 400px;
   height: 300px;
   padding: 44px;
-  background: #ffffff99;
-  border: solid 1.5pt white;
+  background: #ffffffbb;
+  border: solid 10px white;
   box-shadow: 4px 4px 20px #00000077;
 }
 .contact-card__button {
   flex-direction: column;
   width: 11em;
   padding: 12px 24px;
-  background: #005E93dd;
+  background: #333;
   box-shadow: 4px 4px 20px #00000077;
-  color: white;
-  font-size: 1.17em;
+  font-size: 1.2em;
   font-weight: 500;
   transition: transform 140ms ease-in-out;
 }
@@ -320,7 +311,7 @@ iframe {
   color: white;
 }
 .contact-card__text {
-  font-size: 1.14em;
+  font-size: 1.1em;
   font-weight: 700;
   line-height: 1.7em;
   margin-top: 30px;

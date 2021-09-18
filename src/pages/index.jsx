@@ -44,7 +44,7 @@ const IndexPage = () => {
         </section>
         <section id='cabinet' className='about'>
           <div className='about-container flex'>
-            <article className='about-article about-article--crew'>
+            <article className='about-article about-article--top'>
               <h3 className='about-article__headline headline'>Notre équipe</h3>
               <div className='line'></div>
               <div>
@@ -70,10 +70,10 @@ const IndexPage = () => {
               </div>
             </article>
             <StaticImage
-              src='../images/ETEC - CABINET DENTAIRE - ATUR - PORTRAITS-004.jpg'
+              src='../images/ETEC - CABINET DENTAIRE - 006.jpg'
               alt="L'équipe de dentistes du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
               placeholder='blurred'
-              className='image image--crew'
+              className='image'
             />
           </div>
           <div className='about-container flex'>
@@ -83,8 +83,8 @@ const IndexPage = () => {
               placeholder='blurred'
               className='image image--lab'
             /> */}
-            <Carousel />
-            <article className='about-article about-article--lab'>
+            <Carousel class='image--lab' />
+            <article className='about-article about-article--bottom'>
               <h3 className='about-article__headline headline'>Le cabinet</h3>
               <div className='line'></div>
               <p className='about-article__text'>

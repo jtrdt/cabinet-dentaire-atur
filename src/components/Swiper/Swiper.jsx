@@ -23,28 +23,28 @@ export default function Carousel() {
       >
         <SwiperSlide>
           <StaticImage
-            src='../../images/ETEC - CABINET DENTAIRE - ATUR - BATIMENT-002.jpg'
+            src='../../images/ETEC - CABINET DENTAIRE - 002.jpg'
             alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
             placeholder='blurred'
           />
         </SwiperSlide>
         <SwiperSlide>
           <StaticImage
-            src='../../images/ETEC - CABINET DENTAIRE - ATUR - BATIMENT-003.jpg'
+            src='../../images/ETEC - CABINET DENTAIRE - 003.jpg'
             alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
             placeholder='blurred'
           />
         </SwiperSlide>
         <SwiperSlide>
           <StaticImage
-            src='../../images/ETEC - CABINET DENTAIRE - ATUR - BATIMENT-013.jpg'
+            src='../../images/ETEC - CABINET DENTAIRE - 004.jpg'
             alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
             placeholder='blurred'
           />
         </SwiperSlide>
         <SwiperSlide>
           <StaticImage
-            src='../../images/ETEC - CABINET DENTAIRE - ATUR - BATIMENT-016.jpg'
+            src='../../images/ETEC - CABINET DENTAIRE - 005.jpg'
             alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
             placeholder='blurred'
           />
