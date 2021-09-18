@@ -1,38 +1,27 @@
 @font-face {
-  font-family: 'Playfair';
-  src: url('../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Playfair';
-  src: url('../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf') format('truetype');
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 @font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
   font-weight: 700;
 }
-
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
-  font-weight: 600;
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
 }
 *,
 *::before,
@@ -46,38 +35,39 @@ html {
   min-width: 320px;
 }
 body {
-  font-family: 'Poppins', Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: white;
-}
-img {
-  object-fit: cover;
+  color: black;
 }
 a {
   cursor: pointer;
   text-decoration: none;
 }
 button {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   background: transparent;
   border: none;
-  color: white;
   cursor: pointer;
+  color: white;
 }
 ul {
   list-style-type: none;
   padding: 0;
 }
-.page {
-  width: 100vw;
+.headline {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
 }
-.container {
-  z-index: 10;
-}
+
+/* ---- */
+
 .home {
   min-height: 100vh;
-  background: url('../images/bg.jpg') no-repeat center;
+  background: url('../images/ETEC\ -\ CABINET\ DENTAIRE\ -\ ATUR\ -\ BATIMENT-018.jpg') no-repeat center;
   background-size: cover;
 }
 .home-container {
@@ -86,21 +76,20 @@ ul {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #00d48888, #005E93);
+  padding: 0px 12px;
+  background: linear-gradient(to bottom, #90ee9077, #005E93);
   color: white;
-  padding: 0 12px;
 }
 .home-container__headline {
-  font-family: 'Playfair', Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-size: 90px;
+  font-size: 5.7em;
   font-weight: 700;
 }
-.home-container__headline--small {
+.home-container__headline--alt {
   display: inline-block;
-  font-size: 30px;
-  font-weight: 400;
-  max-width: 500px;
+  max-width: 400px;
+  text-transform: none;
+  font-size: 0.3em;
+  font-weight: 500;
 }
 .home-container__text {
   display: flex;
@@ -108,24 +97,24 @@ ul {
   align-items: center;
 }
 .home-container__text--name {
-  font-family: 'OpenSans', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  padding: 10px 20px;
-  background: #ffffff55;
-  border: solid 1.5pt #ffffffaa;
-  box-shadow: inset 0 0 30px #ffffffaa;
-  margin: 64px 24px 0 24px;
+  padding: 12px 24px;
+  margin: 54px 24px 0px 24px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  background: #ffffff77;
+  border: solid 1.5pt #ffffff77;
+  box-shadow: 4px 4px 20px #00000044;
 }
 @media screen and (max-width: 700px) {
   .home-container {
-  padding-top: 70px;
+    padding-top: 70px;
   }
   .home-container__headline {
-    font-size: 64px;
+    font-size: 4em;
   }
-  .home-container__headline--small {
-    font-size: 20px;
+  .home-container__headline--alt {
+    font-size: 0.3em;
   }
   .home-container__text {
     flex-direction: column;
@@ -134,63 +123,98 @@ ul {
   }
   .home-container__text--name {
     margin: 12px;
+    font-size: 1em;
   }
 }
+
+/* ---- */
+
 .welcome {
   height: 70vh;
-  background: url('../images/welcome.jpg') no-repeat center;
+  background: url('../images/ETEC\ -\ CABINET\ DENTAIRE\ -\ ATUR\ -\ BATIMENT-004.jpg') no-repeat center;
   background-size: cover;
 }
 .welcome-container {
-  background: #ffffffaa;
-  width: 100%;
-  height: 100%;
+  height: 70vh;
+  background: #ffffff77;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 12px;
 }
 .welcome-container__headline {
   padding: 24px;
-  max-width: 500px;
+  max-width: 440px;
   text-align: center;
-  color: #333;
   background: #ffffffaa;
   backdrop-filter: blur(7px);
-  font-size: 34px;
+  border: solid 10px white;
+  box-shadow: 4px 4px 20px #000000aa;
+  font-size: 1.77em;
   font-weight: 400;
-  box-shadow: 4px 4px 30px #00000055;
-  margin: 0 12px;
+  line-height: 1.3em;
 }
-.welcome-container__headline--bold {
-  font-weight: 600;
+.welcome-container__headline--alt {
+  font-weight: 700;
 }
 @media screen and (max-width: 700px) {
   .welcome-container__headline {
     padding: 12px;
-    font-size: 27px;
+    font-size: 1.47em;
   }
 }
+
+/* ---- */
+
 .about {
-  background: #f4f4f4;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 12px 0;
+  background: #f4f4f4;
 }
 .about-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 48px 12px;
+  margin: 47px 0px;
 }
 .image {
   position: relative;
   z-index: 0;
   object-fit: cover;
-  max-width: 570px;
-  max-height: 370px;
-  box-shadow: 4px 4px 30px #00000077;
-  overflow: hidden;
+  width: 370px;
+  height: 300px;
+  box-shadow: 4px 4px 20px #00000077;
+  border: solid 1.5pt white;
+}
+.about-article {
+  position: relative;
+  z-index: 4;
+  max-width: 370px;
+  padding: 24px 34px;
+  background: #ffffffdd;
+  backdrop-filter: blur(10px);
+  border: solid 1.5pt white;
+  box-shadow: 4px 4px 20px #00000077;
+  text-align: center;
+}
+.about-article__headline {
+  font-size: 1.7em;
+}
+.line {
+  width: 70px;
+  height: 4px;
+  margin: 12px auto;
+  background: #90ee90aa;
+}
+.about-article__text {
+  font-size: 1.14em;
+  line-height: 1.7em;
+}
+.about-article__text li {
+  margin: 12px 0;
 }
 @media screen and (max-width: 900px) {
   .about-container {
@@ -201,97 +225,73 @@ ul {
   .about :nth-child(2) {
     flex-direction: column-reverse;
   }
-  .about-article {
-    margin: 0 12px;
-  }
-  .image {
-    max-width: 100vw;
-  }
   .image--crew {
-    margin-top: -30px;
+    margin-top: -20px;
   }
   .image--lab {
-    margin-top: -30px;
+    margin-top: -20px;
   }
   .about-article--crew {
-    margin-bottom: -30px;
+    margin-bottom: -20px;
   }
   .about-article--lab {
-    margin-bottom: -30px;
+    margin-bottom: -20px;
   }
 }
-  @media screen and (min-width: 901px) {
-    .image--crew {
-      margin-left: -30px;
-    }
-    .image--lab {
-      margin-right: -30px;
-    }
-    .about-article--crew {
-      margin-right: -30px;
-    }
-    .about-article--lab {
-      margin-left: -30px;
-    }
+@media screen and (min-width: 900px) {
+  .image--crew {
+    margin-left: -30px;
+  }
+  .image--lab {
+    margin-right: -30px;
+  }
+  .about-article--crew {
+    margin-right: -30px;
+  }
+  .about-article--lab {
+    margin-left: -30px;
+  }
 }
-.about-article {
-  position: relative;
-  z-index: 4;
-  text-align: center;
-  padding: 24px 36px;
-  background: #ffffffdd;
-  border: solid 1.5pt white;
-  backdrop-filter: blur(10px);
-  box-shadow: 4px 4px 30px #00000077;
-  max-width: 400px;
+@media screen and (min-width: 600px) {
+  .image {
+    width: 600px;
+    height: 400px;    
+  }
 }
-.about-article__headline {
-  font-size: 36px;
-  color: #333;
-}
-.line {
-  height: 3px;
-  width: 70px;
-  background: #00d488aa;
-  margin: 12px auto;
-}
-.about-article__text {
-  font-size: 18px;
-}
-.about-article__text li {
-  margin: 12px 0;
-}
-.find {
+
+/* ---- */
+
+.location {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 48px 12px;
+  padding: 47px 12px;
   background: white;
 }
-.find__headline {
-  text-align: center;
-  font-size: 57px;
-  color: #333;
+.location__headline {
+  font-size: 2.4em;
 }
-.line--big {
-  height: 4px;
+.line--alt {
   width: 100px;
+  height: 4px;
   margin-bottom: 36px;
 }
 iframe {
   width: 100%;
   max-width: 900px;
   height: 500px;
-  border: none;
-  box-shadow: 4px 4px 30px #00000066;
+  box-shadow: 4px 4px 20px #00000077;
   border: solid 1.5pt white;
 }
 @media screen and (max-width: 700px) {
-  .find__headline {
-    font-size: 47px;
+  .location__headline {
+    font-size: 2.1em;
   }
 }
+
+/* ---- */
+
 .contact {
   position: relative;
   z-index: 10;
@@ -299,24 +299,63 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 47px 12px;
   background: #f4f4f4;
-  padding: 48px 12px;
+  background: linear-gradient(to top, #90ee90aa, #005E93dd);
 }
 .contact__headline {
-  text-align: center;
-  font-size: 44px;
-  color: #333;
+  font-size: 2em;
+  color: white;
 }
 .contact-container {
-  width: 100%;
-  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1000px;
+}
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  padding: 44px;
+  background: #ffffff99;
+  border: solid 1.5pt white;
+  box-shadow: 4px 4px 20px #00000077;
+}
+.contact-card__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 11em;
+  padding: 12px 24px;
+  background: #005E93dd;
+  box-shadow: 4px 4px 20px #00000077;
+  color: white;
+  font-size: 1.17em;
+  font-weight: 500;
+  transition: transform 140ms ease-in-out;
+}
+.contact-card__button:hover {
+  transform: translate(3px, 3px);
+}
+.contact-card__button a {
+  color: white;
+}
+.contact-card__text {
+  font-size: 1.14em;
+  font-weight: 700;
+  line-height: 1.7em;
+  margin-top: 30px;
+  max-width: 300px;
 }
 @media screen and (max-width: 900px) {
   .contact__headline {
-    font-size: 37px;
+    font-size: 1.7em;
   }
   .contact-container {
     flex-direction: column;
@@ -325,34 +364,4 @@ iframe {
     margin: 12px 0;
     max-width: 100%;
   }
-  }
-.contact-card {
-  padding: 36px 48px;
-  background: white;
-  box-shadow: 4px 4px 30px #00000066;
-  width: 400px;
-  height: 300px;
-  font-size: 18px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  font-weight: 400;
-}
-.contact-card__button {
-  padding: 12px 24px;
-  background: #005E93dd;
-  box-shadow: 4px 4px 20px #00000077;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 18px;
-  width: 200px;
-}
-.contact-card__button a {
-  color: white;
 }
