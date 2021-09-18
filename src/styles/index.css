@@ -243,8 +243,8 @@ ul {
   }
   @media screen and (min-width: 600px) {
     .image {
-      width: 600px;
-      height: 400px;    
+      width: 700px;
+      height: 450px;    
     }
   }
 
@@ -280,7 +280,7 @@ iframe {
   flex-direction: column;
   padding: 47px 12px;
   background: #f4f4f4;
-  background: linear-gradient(to top, #90ee90, #005E93);
+  background: #8181c7;
 }
 .contact__headline {
   font-size: 2.4em;

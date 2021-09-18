@@ -2,6 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import Footer from '../components/Footer/Footer';
 import Nav from '../components/Nav/Nav';
+import Carousel from '../components/Swiper/Swiper';
 import '../styles/index.css';
 
 const IndexPage = () => {
@@ -76,12 +77,13 @@ const IndexPage = () => {
             />
           </div>
           <div className='about-container flex'>
-            <StaticImage
+            {/* <StaticImage
               src='../images/ETEC - CABINET DENTAIRE - ATUR - BATIMENT-003.jpg'
               alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
               placeholder='blurred'
               className='image image--lab'
-            />
+            /> */}
+            <Carousel />
             <article className='about-article about-article--lab'>
               <h3 className='about-article__headline headline'>Le cabinet</h3>
               <div className='line'></div>
