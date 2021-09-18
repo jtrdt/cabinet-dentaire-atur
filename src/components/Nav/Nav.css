@@ -11,13 +11,12 @@ nav {
 }
 .nav__link {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 1.1em;
+  font-weight: 700;
   margin: 0px 20px;
   transition: border-bottom-color 140ms ease-in-out;
   padding-bottom: 4px;
-  border-bottom: solid 3px #ffffff11;
+  border-bottom: solid 3px transparent;
 }
 .nav__link:hover {
   border-bottom-color: white;
@@ -32,6 +31,6 @@ nav a {
   }
   .nav__link {
     margin: 0px 0px;
-    font-size: 14px;
+    font-size: 1em;
   }
 }

@@ -10,7 +10,7 @@ const IndexPage = () => {
       <Nav />
       <main>
         <section class='home'>
-          <div class='home-container'>
+          <div class='home-container flex'>
             <title>Cabinet l'Effet Dentaire — Dentiste Atur Boulazac Isle Manoire Grand Périgueux</title>
             <h1 class='home-container__headline headline'>
               Cabinet <br /> l'Effet Dentaire <br />
@@ -32,16 +32,16 @@ const IndexPage = () => {
           </div>
         </section>
         <section class='welcome'>
-          <div class='welcome-container'>
+          <div class='welcome-container flex'>
             <h2 class='welcome-container__headline'>
-              Bienvenue sur le site du <span class='welcome-container__headline--alt'>Cabinet l'Effet Dentaire</span>{' '}
+              Bienvenue sur le site du <span class='welcome-container__headline--alt'>Cabinet l'Effet Dentaire,</span>{' '}
               notre équipe vous accueille à <br />
-              <span class='welcome-container__headline--alt'>Atur - Boulazac Isle Manoire</span>
+              <span class='welcome-container__headline--alt'>Atur - Boulazac Isle Manoire</span>.
             </h2>
           </div>
         </section>
         <section id='cabinet' class='about'>
-          <div class='about-container'>
+          <div class='about-container flex'>
             <article class='about-article about-article--crew'>
               <h3 class='about-article__headline headline'>Notre équipe</h3>
               <div class='line'></div>
@@ -74,7 +74,7 @@ const IndexPage = () => {
               class='image image--crew'
             />
           </div>
-          <div class='about-container'>
+          <div class='about-container flex'>
             <StaticImage
               src='../images/ETEC - CABINET DENTAIRE - ATUR - BATIMENT-023.jpg'
               alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
@@ -92,7 +92,7 @@ const IndexPage = () => {
             </article>
           </div>
         </section>
-        <section id='nous-trouver' class='location'>
+        <section id='nous-trouver' class='location flex'>
           <h3 class='location__headline headline'>Nous trouver</h3>
           <div class='line line--alt'></div>
           <iframe
@@ -100,23 +100,23 @@ const IndexPage = () => {
             title='map'
           ></iframe>
         </section>
-        <section id='nous-contacter' class='contact'>
+        <section id='nous-contacter' class='contact flex'>
           <h3 class='contact__headline headline'>Nous contacter</h3>
           <div class='line line--alt'></div>
-          <div class='contact-container'>
-            <div class='contact-card'>
-              <button class='contact-card__button'>
+          <div class='contact-container flex'>
+            <div class='contact-card flex'>
+              <button class='contact-card__button flex'>
                 <a href='tel:+33564340130'>Par téléphone</a>
               </button>
               <p class='contact-card__text'>
                 Au 05 64 34 01 30 <br /> du lundi au jeudi <br /> 9h30-12h et 14h-17h <br /> vendredi 9h30-12h
               </p>
             </div>
-            <div class='contact-card'>
-              <button class='contact-card__button'>
+            <div class='contact-card flex'>
+              <button class='contact-card__button flex'>
                 <a href='mailto:contact@cabinet-dentaire-atur.fr?subject=Demande%20de%20renseignements'>Par email</a>
               </button>
-              <p class='contact-card__text'>Écrivez-vous, notre secrétaire vous répondra dans les meilleurs délais !</p>
+              <p class='contact-card__text'>Écrivez-nous, notre secrétaire vous répondra dans les meilleurs délais !</p>
             </div>
           </div>
         </section>
