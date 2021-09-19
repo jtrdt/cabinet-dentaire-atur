@@ -21,6 +21,12 @@ const Carousel = () => {
       >
         <SwiperSlide>
           <StaticImage
+            src='../../images/ETEC - CABINET DENTAIRE - 009.jpg'
+            alt="Salle d'attente du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <StaticImage
             src='../../images/ETEC - CABINET DENTAIRE - 002.jpg'
             alt="Salle d'attente du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
           />
@@ -40,6 +46,12 @@ const Carousel = () => {
         <SwiperSlide>
           <StaticImage
             src='../../images/ETEC - CABINET DENTAIRE - 005.jpg'
+            alt="Salle de soin du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <StaticImage
+            src='../../images/ETEC - CABINET DENTAIRE - 008.jpg'
             alt="Salle de soin du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
           />
         </SwiperSlide>
