@@ -77,12 +77,6 @@ const IndexPage = () => {
             />
           </div>
           <div className='about-container flex'>
-            {/* <StaticImage
-              src='../images/ETEC - CABINET DENTAIRE - ATUR - BATIMENT-003.jpg'
-              alt="Salle de stérilisation du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
-              placeholder='blurred'
-              className='image image--lab'
-            /> */}
             <article className='about-article about-article--bottom'>
               <h3 className='about-article__headline headline'>Le cabinet</h3>
               <div className='line'></div>
@@ -117,7 +111,7 @@ const IndexPage = () => {
             </div>
             <div className='contact-card flex'>
               <button className='contact-card__button flex'>
-                <a href='mailto:contact@cabinet-dentaire-atur.fr?subject=Demande%20de%20renseignements'>Par email</a>
+                <a href='mailto:effet.dentaire@gmail.com?subject=Demande%20de%20renseignements'>Par email</a>
               </button>
               <p className='contact-card__text'>
                 Écrivez-nous, notre secrétaire vous répondra dans les meilleurs délais !
