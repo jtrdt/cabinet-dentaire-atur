@@ -35,14 +35,14 @@ const IndexPage = () => {
         <section className='welcome'>
           <div className='welcome-container flex'>
             <h2 className='welcome-container__headline'>
-              Bienvenue sur le site du{' '}
+              Bienvenue sur le site du <br />
               <span className='welcome-container__headline--alt'>Cabinet l'Effet Dentaire,</span> notre équipe vous
               accueille à <br />
               <span className='welcome-container__headline--alt'>Atur - Boulazac Isle Manoire</span>.
             </h2>
           </div>
         </section>
-        <section id='cabinet' className='about'>
+        <section id='cabinet' className='about flex'>
           <div className='about-container flex'>
             <article className='about-article about-article--top'>
               <h3 className='about-article__headline headline'>Notre équipe</h3>
@@ -83,7 +83,6 @@ const IndexPage = () => {
               placeholder='blurred'
               className='image image--lab'
             /> */}
-            <Carousel class='image--lab' />
             <article className='about-article about-article--bottom'>
               <h3 className='about-article__headline headline'>Le cabinet</h3>
               <div className='line'></div>
@@ -93,6 +92,7 @@ const IndexPage = () => {
                 <br /> Le cabinet est aménagé pour l'accueil des personnes à mobilité réduite.
               </p>
             </article>
+            <Carousel />
           </div>
         </section>
         <section id='nous-trouver' className='location flex'>

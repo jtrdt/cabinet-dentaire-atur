@@ -3,10 +3,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 44px 12px;
+  padding: 40px 12px;
   background: #222;
   color: white;
-  line-height: 1.7em;
+  line-height: 1.5em;
 }
 .footer-container {
   display: flex;
@@ -21,16 +21,16 @@ footer {
   align-items: flex-start;
   width: 400px;
 }
+.footer-links__title {
+  font-size: 1em;
+  font-weight: 500;
+}
 footer a {
   color: #aaa;
   transition: color 140ms ease-in-out
 }
 footer li:hover a, .footer-legal__brand:hover {
   color: white;
-}
-.footer-links__title {
-  font-weight: 500;
-  font-size: 1em;
 }
 .footer-legal {
   display: flex;
@@ -60,12 +60,13 @@ footer li:hover a, .footer-legal__brand:hover {
     width: unset;
   }
   .footer-links__title {
-    margin: 14px 0;
+    margin: 12px 0;
   }
   .footer-legal {
     margin-top: 24px;
   }
   .footer__location {
+    margin-top: 24px;
     text-align: center;
   }
 }

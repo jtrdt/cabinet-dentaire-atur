@@ -1,27 +1,22 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
   font-weight: 700;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
 }
 *,
 *::before,
@@ -35,7 +30,7 @@ html {
   min-width: 320px;
 }
 body {
-  font-family: 'Montserrat', Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: white;
@@ -46,7 +41,7 @@ a {
   text-decoration: none;
 }
 button {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   border: none;
   cursor: pointer;
 }
@@ -55,10 +50,9 @@ ul {
   padding: 0;
 }
 .headline {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 900;
   text-align: center;
-  text-transform: uppercase;
 }
 .flex {
   display: flex;
@@ -69,28 +63,27 @@ ul {
   min-height: 100vh;
   background: url('../images/ETEC\ -\ CABINET\ DENTAIRE\ - 007.jpg') no-repeat center;
   background-size: cover;
+  position: sticky;
   z-index: -1;
   top: 0;
-  position: sticky;
 }
 .home-container {
   flex-direction: column;
   min-height: 100vh;
   padding: 0px 12px;
-  background: linear-gradient(to bottom, #90ee90bb, #106Ea3dd);
+  background: linear-gradient(to bottom, #90eeb7aa, #105ea3);
   color: white;
 }
 .home-container__headline {
-  font-size: 5em;
-  font-weight: 700;
+  font-size: 5.7em;
 }
 .home-container__headline--alt {
   text-transform: none;
   display: inline-block;
-  max-width: 370px;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.7em;
+  max-width: 400px;
+  font-size: 0.3em;
+  font-weight: 400;
+  line-height: 1.5em;
 }
 .home-container__text {
   display: flex;
@@ -102,10 +95,9 @@ ul {
   margin: 54px 24px 0px 24px;
   text-align: center;
   font-size: 1.2em;
-  font-weight: 500;
-  background: #ffffff55;
-  border: solid 1.5pt #ffffff88;
-  box-shadow: inset 0px 0px 20px #ffffffaa;
+  font-weight: 400;
+  background: #ffffff77;
+  box-shadow: 4px 4px 20px #00000055;
 }
   @media screen and (max-width: 700px) {
     .home-container {
@@ -116,7 +108,6 @@ ul {
     }
     .home-container__headline--alt {
       font-size: 0.3em;
-      line-height: 1.4em;
     }
     .home-container__text {
       flex-direction: column;
@@ -124,11 +115,10 @@ ul {
       justify-content: flex-start;
     }
     .home-container__text--name {
-      margin: 13px;
+      margin: 12px;
       font-size: 1em;
     }
   }
-
 .welcome {
   height: 70vh;
   background: url('../images/ETEC\ -\ CABINET\ DENTAIRE\ - 001.jpg') no-repeat center;
@@ -137,17 +127,17 @@ ul {
 }
 .welcome-container {
   height: 70vh;
-  background: #ffffff77;
   padding: 0px 12px;
+  background: #ffffff77;
 }
 .welcome-container__headline {
-  padding: 24px;
   max-width: 440px;
-  text-align: center;
-  background: #ffffffaa;
-  backdrop-filter: blur(7px);
+  padding: 24px;
+  background: #ffffffbb;
   border: solid 10px white;
   box-shadow: 4px 4px 20px #000000aa;
+  backdrop-filter: blur(7px);
+  text-align: center;
   font-size: 1.8em;
   font-weight: 400;
   line-height: 1.3em;
@@ -158,17 +148,15 @@ ul {
   @media screen and (max-width: 700px) {
     .welcome-container__headline {
       padding: 12px;
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
   }
-
 .about {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 0;
   background: #f4f4f4;
+}
+.about :nth-child(1) {
+  flex-direction: row-reverse;
 }
 .about-container {
   margin: 47px 0px;
@@ -176,12 +164,11 @@ ul {
 .about-article {
   position: relative;
   z-index: 4;
-  max-width: 370px;
+  width: 340px;
   padding: 24px 34px;
   background: #ffffffdd;
-  backdrop-filter: blur(10px);
-  border: solid 1.5pt white;
   box-shadow: 4px 4px 20px #00000077;
+  backdrop-filter: blur(10px);
   text-align: center;
 }
 .about-article__headline {
@@ -191,11 +178,11 @@ ul {
   width: 70px;
   height: 4px;
   margin: 12px auto;
-  background: #90ee90aa;
+  background: #90eeb7bb;
 }
 .about-article__text {
-  font-size: 1.2em;
-  line-height: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.4em;
 }
 .about-article__text li {
   margin: 12px 0;
@@ -207,15 +194,14 @@ ul {
   width: 100%;
   height: 350px;
   box-shadow: 4px 4px 20px #00000077;
-  border: solid 1.5pt white;
 }
   @media screen and (max-width: 900px) {
     .about-container {
       flex-direction: column;
     }
-    .about :nth-child(2) {
-      flex-direction: column-reverse;
-    }
+    .about :nth-child(1) {
+      flex-direction: column;
+    }    
     .about-article--top {
       margin-bottom: -40px;
     }
@@ -225,22 +211,24 @@ ul {
   }
   @media screen and (min-width: 900px) {
     .about-article--top {
-      margin-right: -60px;
+      margin-left: -60px;
     }
     .about-article--bottom {
-      margin-left: -60px;
+      margin-right: -60px;
     }
   }
   @media screen and (min-width: 700px) {
     .about-article__headline {
       font-size: 1.7em;
     }
+    .about-article__text {
+      font-size: 1.2em;
+    }
     .image {
       width: 700px;
       height: 450px;    
     }
   }
-
 .location {
   flex-direction: column;
   padding: 47px 12px;
@@ -252,51 +240,50 @@ ul {
 .line--alt {
   width: 100px;
   height: 4px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 iframe {
   width: 100%;
   max-width: 900px;
   height: 500px;
+  border: none;
   box-shadow: 4px 4px 20px #00000077;
-  border: solid 1.5pt white;
 }
   @media screen and (max-width: 700px) {
     .location__headline {
-      font-size: 2.1em;
+      font-size: 2em;
     }
   }
-
 .contact {
   position: relative;
   z-index: 10;
   flex-direction: column;
   padding: 47px 12px;
-  background: #308Ec3;
+  background: #307ec3;
 }
 .contact__headline {
-  font-size: 2.2em;
+  font-size: 2.3em;
   color: white;
 }
 .contact-container {
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   max-width: 1000px;
 }
 .contact-card {
   flex-direction: column;
   justify-content: flex-start;
-  text-align: center;
   width: 400px;
   height: 300px;
-  padding: 44px;
-  background: #ffffffbb;
+  padding: 40px;
+  background: #ffffffcc;
   border: solid 10px white;
   box-shadow: 4px 4px 20px #00000077;
+  text-align: center;
 }
 .contact-card__button {
   flex-direction: column;
-  width: 11em;
+  width: 200px;
   padding: 12px 24px;
   background: #333;
   box-shadow: 4px 4px 20px #00000077;
@@ -311,21 +298,26 @@ iframe {
   color: white;
 }
 .contact-card__text {
-  font-size: 1.1em;
-  font-weight: 700;
-  line-height: 1.7em;
-  margin-top: 30px;
   max-width: 300px;
+  margin-top: 24px;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.5em;
 }
   @media screen and (max-width: 900px) {
     .contact__headline {
-      font-size: 1.7em;
+      font-size: 2em;
     }
     .contact-container {
       flex-direction: column;
     }
     .contact-card {
+      width: 340px;
+      height: 270px;
       margin: 12px 0;
       max-width: 100%;
+    }
+    .contact-card__button, .contact-card__text {
+      font-size: 1.1em;
     }
   }
