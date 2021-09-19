@@ -1,8 +1,11 @@
 .swiper {
-  width: 700px;
-  height: 450px;
-  border: solid 1.5pt white;
-  box-shadow: 4px 4px 20px #00000077;
+    position: relative;
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+    box-shadow: 4px 4px 20px #00000077;
+    border: solid 1.5pt white;
 }
 .swiper-slide {
   text-align: center;
@@ -22,13 +25,19 @@
 }
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 700px;
+  height: 450px;  
   object-fit: cover;
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 700px) {
   .swiper {
-    width: 100%;
-    height: 300px;
+    width: 700px;
+    height: 450px;    
+  }
+}
+@media screen and (max-width: 700px) {
+  .swiper {
+    width: 700px;
+    height: 450px;    
   }
 }
