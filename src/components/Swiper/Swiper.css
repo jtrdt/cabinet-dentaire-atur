@@ -31,3 +31,8 @@
     max-height: 450px;
   }
 }
+@media screen and (max-width: 330px) {
+  .swiper {
+    height: 300px;
+  }
+}

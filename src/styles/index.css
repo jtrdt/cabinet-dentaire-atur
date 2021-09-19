@@ -27,7 +27,6 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  min-width: 320px;
 }
 body {
   font-family: 'Roboto', Avenir, Helvetica, Arial, sans-serif;
@@ -99,26 +98,34 @@ ul {
   background: #ffffff77;
   box-shadow: 4px 4px 20px #00000055;
 }
-  @media screen and (max-width: 700px) {
-    .home-container {
-      padding-top: 70px;
-    }
-    .home-container__headline {
-      font-size: 4em;
-    }
-    .home-container__headline--alt {
-      font-size: 0.3em;
-    }
-    .home-container__text {
-      flex-direction: column;
-      align-items: unset;
-      justify-content: flex-start;
-    }
-    .home-container__text--name {
-      margin: 12px;
-      font-size: 1em;
-    }
+@media screen and (max-width: 700px) {
+  .home-container {
+    padding-top: 70px;
   }
+  .home-container__headline {
+    font-size: 4em;
+  }
+  .home-container__headline--alt {
+    font-size: 0.3em;
+  }
+  .home-container__text {
+    flex-direction: column;
+    align-items: unset;
+    justify-content: flex-start;
+  }
+  .home-container__text--name {
+    margin: 12px;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 330px) {
+  .home-container__headline {
+    font-size: 3.7em;
+  }
+  .home-container__headline--alt {
+    font-size: 0.3em;
+  }
+}
 .welcome {
   height: 70vh;
   background: url('../images/ETEC\ -\ CABINET\ DENTAIRE\ - 001.jpg') no-repeat center;
@@ -145,12 +152,12 @@ ul {
 .welcome-container__headline--alt {
   font-weight: 700;
 }
-  @media screen and (max-width: 700px) {
-    .welcome-container__headline {
-      padding: 12px;
-      font-size: 1.4em;
-    }
+@media screen and (max-width: 700px) {
+  .welcome-container__headline {
+    padding: 12px;
+    font-size: 1.4em;
   }
+}
 .about {
   flex-direction: column;
   background: #f4f4f4;
@@ -195,40 +202,45 @@ ul {
   height: 350px;
   box-shadow: 4px 4px 20px #00000077;
 }
-  @media screen and (max-width: 900px) {
-    .about-container {
-      flex-direction: column;
-    }
-    .about :nth-child(1) {
-      flex-direction: column;
-    }    
-    .about-article--top {
-      margin-bottom: -40px;
-    }
-    .about-article--bottom {
-      margin-bottom: -40px;
-    }
+@media screen and (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
   }
-  @media screen and (min-width: 900px) {
-    .about-article--top {
-      margin-left: -60px;
-    }
-    .about-article--bottom {
-      margin-right: -60px;
-    }
+  .about :nth-child(1) {
+    flex-direction: column;
+  }    
+  .about-article--top {
+    margin-bottom: -40px;
   }
-  @media screen and (min-width: 700px) {
-    .about-article__headline {
-      font-size: 1.7em;
-    }
-    .about-article__text {
-      font-size: 1.2em;
-    }
-    .image {
-      width: 700px;
-      height: 450px;    
-    }
+  .about-article--bottom {
+    margin-bottom: -40px;
   }
+}
+@media screen and (min-width: 900px) {
+  .about-article--top {
+    margin-left: -60px;
+  }
+  .about-article--bottom {
+    margin-right: -60px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .about-article__headline {
+    font-size: 1.7em;
+  }
+  .about-article__text {
+    font-size: 1.2em;
+  }
+  .image {
+    width: 700px;
+    height: 450px;    
+  }
+}
+@media screen and (max-width: 330px) {
+  .image {
+    height: 300px;
+  }
+}
 .location {
   flex-direction: column;
   padding: 47px 12px;
@@ -249,11 +261,16 @@ iframe {
   border: none;
   box-shadow: 4px 4px 20px #00000077;
 }
-  @media screen and (max-width: 700px) {
-    .location__headline {
-      font-size: 2em;
-    }
+@media screen and (max-width: 700px) {
+  .location__headline {
+    font-size: 2em;
   }
+}
+@media screen and (max-width: 330px) {
+  iframe {
+    height: 450px;
+  }
+}
 .contact {
   position: relative;
   z-index: 10;
@@ -298,26 +315,26 @@ iframe {
   color: white;
 }
 .contact-card__text {
-  max-width: 300px;
+  max-width: 240px;
   margin-top: 24px;
   font-size: 1.2em;
   font-weight: 500;
   line-height: 1.5em;
 }
-  @media screen and (max-width: 900px) {
-    .contact__headline {
-      font-size: 2em;
-    }
-    .contact-container {
-      flex-direction: column;
-    }
-    .contact-card {
-      width: 340px;
-      height: 270px;
-      margin: 12px 0;
-      max-width: 100%;
-    }
-    .contact-card__button, .contact-card__text {
-      font-size: 1.1em;
-    }
+@media screen and (max-width: 900px) {
+  .contact__headline {
+    font-size: 2em;
   }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-card {
+    width: 340px;
+    height: 270px;
+    margin: 12px 0;
+    max-width: 100%;
+  }
+  .contact-card__button, .contact-card__text {
+    font-size: 1.1em;
+  }
+}
