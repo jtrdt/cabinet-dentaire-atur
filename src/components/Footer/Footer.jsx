@@ -16,9 +16,6 @@ const Footer = () => {
               <li>
                 <a href='/#cabinet'>Le cabinet</a>
               </li>
-              {/* <li>
-                <Link to='/infos'>Informations</Link>
-              </li> */}
               <li>
                 <a href='/#nous-trouver'>Nous trouver</a>
               </li>

@@ -11,9 +11,6 @@ const Nav = () => {
       <a className='nav__link' href='/#cabinet' activeStyle={{ textDecoration: 'underline' }}>
         Le cabinet
       </a>
-      {/* <Link className='nav__link' to='/infos'>
-          Informations
-        </Link> */}
       <a className='nav__link' href='/#nous-trouver' activeStyle={{ textDecoration: 'underline' }}>
         Nous trouver
       </a>
