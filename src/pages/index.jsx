@@ -114,7 +114,10 @@ const IndexPage = () => {
                 <a href='mailto:effet.dentaire@gmail.com?subject=Demande%20de%20renseignements'>Par email</a>
               </button>
               <p className='contact-card__text'>
-                Écrivez-nous, notre secrétaire vous répondra dans les meilleurs délais !
+                <a href='mailto:effet.dentaire@gmail.com?subject=Demande%20de%20renseignements'>
+                  effet.dentaire@gmail.com
+                </a>
+                <br /> Écrivez-nous, notre secrétaire vous répondra dans les meilleurs délais !
               </p>
             </div>
           </div>
