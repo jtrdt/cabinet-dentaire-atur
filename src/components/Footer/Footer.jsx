@@ -59,7 +59,9 @@ const Footer = () => {
         </div>
       </div>
       <div className='footer__location'>
-        <p>5 Impasse Édouard Glissant 24750 Boulazac Isle Manoire</p>
+        <a href='https://goo.gl/maps/XB8JUBFmaseNFa1r6' target='_blank' rel='noreferrer'>
+          5 Impasse Édouard Glissant 24750 Atur Boulazac Isle Manoire
+        </a>
       </div>
     </footer>
   );
