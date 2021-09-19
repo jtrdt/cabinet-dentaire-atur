@@ -72,8 +72,8 @@ const IndexPage = () => {
             <StaticImage
               src='../images/ETEC - CABINET DENTAIRE - 006.jpg'
               alt="L'équipe de dentistes du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
-              placeholder='blurred'
               className='image'
+              layout='constrained'
             />
           </div>
           <div className='about-container flex'>
