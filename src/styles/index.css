@@ -1,4 +1,14 @@
 @font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -70,17 +80,19 @@ ul {
   flex-direction: column;
   min-height: 100vh;
   padding: 0px 12px;
-  background: linear-gradient(to bottom, #90eeb7aa, #105ea3);
+  background: linear-gradient(to bottom, #90eeb7bb, #105ea3ee);
   color: white;
 }
 .home-container__headline {
-  font-size: 5.7em;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 5.77em;
 }
 .home-container__headline--alt {
   text-transform: none;
   display: inline-block;
-  max-width: 400px;
-  font-size: 0.3em;
+  max-width: 370px;
+  font-size: 0.27em;
   font-weight: 400;
   line-height: 1.5em;
 }
@@ -120,7 +132,7 @@ ul {
 }
 @media screen and (max-width: 330px) {
   .home-container__headline {
-    font-size: 3.7em;
+    font-size: 3.4em;
   }
   .home-container__headline--alt {
     font-size: 0.3em;
