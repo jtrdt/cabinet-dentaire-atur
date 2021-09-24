@@ -4,10 +4,19 @@ import Footer from '../components/Footer/Footer';
 import Nav from '../components/Nav/Nav';
 import Carousel from '../components/Swiper/Swiper';
 import '../styles/index.css';
+import { Helmet } from 'react-helmet';
 
 const IndexPage = () => {
   return (
     <div className='page'>
+      <Helmet>
+        <title>Cabinet l'Effet Dentaire Atur Boulazac Isle Manoire Périgueux</title>
+        <meta
+          name='description'
+          content="Site web du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
+        />
+      </Helmet>
+
       <Nav />
       <main>
         <section className='home'>

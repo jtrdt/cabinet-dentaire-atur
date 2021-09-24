@@ -5,16 +5,16 @@ import './Nav.css';
 const Nav = () => {
   return (
     <nav>
-      <Link className='nav__link' to='#' activeStyle={{ textDecoration: 'underline' }}>
+      <Link className='nav__link' to='#'>
         Accueil
       </Link>
-      <a className='nav__link' href='/#cabinet' activeStyle={{ textDecoration: 'underline' }}>
+      <a className='nav__link' href='/#cabinet'>
         Le cabinet
       </a>
-      <a className='nav__link' href='/#nous-trouver' activeStyle={{ textDecoration: 'underline' }}>
+      <a className='nav__link' href='/#nous-trouver'>
         Nous trouver
       </a>
-      <a className='nav__link' href='/#nous-contacter' activeStyle={{ textDecoration: 'underline' }}>
+      <a className='nav__link' href='/#nous-contacter'>
         Contact
       </a>
     </nav>
