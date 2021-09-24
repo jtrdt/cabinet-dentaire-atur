@@ -5,6 +5,7 @@ import Nav from '../components/Nav/Nav';
 import Carousel from '../components/Swiper/Swiper';
 import '../styles/index.css';
 import { Helmet } from 'react-helmet';
+import favincon from '../images/icon.png';
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
           name='description'
           content="Site web du cabinet l'Effet Dentaire à Atur Boulazac Isle Manoire Périgueux"
         />
+        <link rel='icon' type='image/png' href={favincon} sizes='16x16' />
       </Helmet>
 
       <Nav />
