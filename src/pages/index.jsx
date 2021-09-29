@@ -10,7 +10,7 @@ import favincon from '../images/icon.png';
 const IndexPage = () => {
   return (
     <div className='page'>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: 'fr' }}>
         <title>Cabinet l'Effet Dentaire Atur Boulazac Isle Manoire Périgueux</title>
         <meta
           name='description'
