@@ -71,12 +71,17 @@ const IndexPage = () => {
                     <p>Inscription à l’ordre n°24/832</p>
                   </li>
                   <li>
+                    <strong>Dr LONGUEVILLE Mathilde</strong>
+                    <p>Université Bordeaux 2</p>
+                    <p>Inscription à l’ordre n° 24/951</p>
+                  </li>
+                  <li>
                     <strong>Dr TRIDAT Floriane</strong>
                     <p>Université Clermont Auvergne</p>
                     <p>Inscription à l’ordre n° 24/874</p>
                   </li>
                 </ul>
-                <p className='about-article__text'>Assistantes : Aline et Amanda</p>
+                <p className='about-article__text'>Assistantes : Aline et Élodie</p>
                 <p className='about-article__text'>Sécrétaire : Antoinette</p>
               </div>
             </article>
